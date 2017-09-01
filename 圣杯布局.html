@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局-leo</title>
+	<style>
+		body{
+			display: flex;
+			flex-direction: column;
+			flex:none;
+			height:100vh;
+		}
+		header{
+			background: #e1e1e1;
+		}
+		main{
+			flex:1 0 auto;
+			background: #ff0000;
+			display: flex;
+		}
+		footer{
+			background: #ccc;
+		}
+		main div{
+			flex:1; 
+			border: 1px solid #000;
+		}
+		.left,.right{
+			flex:0 0 12em;
+		}
+		.left{
+			order:-1;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		fdfdf
+	</header>
+	<main>
+		<div class="center">eeee</div>
+		<div class="left">fff</div>
+		<div class="right">gggg</div>
+	</main>
+	<footer>
+		fdfdf
+	</footer>
+</body>
+</html>
